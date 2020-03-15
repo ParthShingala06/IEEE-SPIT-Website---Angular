@@ -1,0 +1,95 @@
+
+  .jumbotron{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+.container{
+    color: rgb(49, 31, 31);
+   
+}
+#events{
+    color:bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align : center;
+  }
+  #team{
+    background: rgba(190, 186, 186, 0.315);
+    -webkit-transition: -webkit-transform ease-out 0.5s, background 5s;
+    -moz-transition: -moz-transform ease-out 0.5s, background 5s;
+    transition: transform ease-out 0.5s, background 5s;
+    color: rgb(46, 46, 99);    
+  }
+  #team:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 200px 20px 20px 20px rgba(198, 197, 212, 0.055);
+    opacity: 0;
+    -webkit-transform: scale(01.05);
+    -moz-transform: scale(01.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  #team:hover {
+    background: rgba(178, 177, 201, 0.171);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    color: rgb(0, 0, 0);
+  }
+  #team:hover i {
+    color: rgb(0, 0, 0);
+  }
+  #team:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+  }
+  @-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 50px #3851bc, 0 0 0 40px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 50px #3851bc, 0 0 0 40px rgba(255, 255, 255, 0.5);
+        -webkit-transform: scale(1.05);
+        opacity: 0;
+    }
+  }
+  @-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+  }
+  @keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+  }
+  

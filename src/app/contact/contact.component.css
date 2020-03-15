@@ -1,0 +1,30 @@
+hr {border-top: 1px solid #000; width:50%;}
+
+a {color: #000;}
+
+a:link{text-decoration:none;}
+
+.box1
+{background: rgba(54, 91, 134, 0.6);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.box2{background: rgb(192, 192, 200, 0.6);
+  padding-bottom: 20px;
+  padding-top: 20px;}
+.box3{background: rgb(255, 0, 0, 0.6);
+  padding-bottom: 20px;
+  padding-top: 20px;}
+
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+#add{
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
